@@ -23,10 +23,7 @@
                 width: 200px;">
                 <div class="subtitle brandon">Share:</div>
                 <div class="social-links">
-                    <a class="fb" href="https://www.facebook.com/sharer.php?u=<%= CGI::escape(root_url) %><%= CGI::escape(@user.referral_code) %>&t=JONNY IV"
-                       onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false;"
-                       target="_blank" title="Share on Facebook">
-                    </a>
+                    <a href="http://www.facebook.com/sharer/sharer.php?u=<%= CGI::escape(root_url) %>?ref=<%= CGI::escape(@user.referral_code) %>&title=JONNY IV" class="fb" target="_blank"></a>
                     <div class="sep"></div>
                     <a href="http://twitter.com/share?url=<%= CGI::escape(root_url) %>?ref=<%= CGI::escape(@user.referral_code) %>&text=<%= CGI::escape(twitter_message) %>" class="twit" target="_blank"></a>
                     <div class="sep"></div>
