@@ -5,7 +5,7 @@ Prelaunchr::Application.configure do
   config.cache_classes = true
 
   # Full error reports are disabled and caching is turned on
-  config.consider_all_requests_local       = false
+  config.consider_all_requests_local       = true
   config.action_controller.perform_caching = true
 
   # Disable Rails's static asset server (Apache or nginx will already do this)
@@ -67,5 +67,5 @@ Prelaunchr::Application.configure do
 
   config.action_mailer.default_url_options = { :host => "jonnyiv.herokuapp.com" }
 
-  config.assets.js_compressor = Uglifier.new(output: {ascii_only: true, quote_keys: true})
+  # config.assets.js_compressor = Uglifier.new(output: {ascii_only: true, quote_keys: true})
 end
