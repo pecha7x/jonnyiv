@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" hash="3679024475">
+    <data-source source="LOCAL" name="Rails prelaunchr: development" uuid="f8ac67df-dd7e-4566-8e66-c384d9d1e47b">
+      <driver-ref>postgresql</driver-ref>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://127.0.0.1/prelaunchr</jdbc-url>
+      <libraries />
+    </data-source>
+    <data-source source="LOCAL" name="Rails prelaunchr: test" uuid="40d8aefa-5004-4f66-82c3-791ca4dda179">
+      <driver-ref>postgresql</driver-ref>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://127.0.0.1/prelaunchr</jdbc-url>
+      <libraries />
+    </data-source>
+    <data-source source="LOCAL" name="Rails prelaunchr: production" uuid="ecadb15c-e9f7-4269-a3a2-dcc2d30ee0a8">
+      <driver-ref>postgresql</driver-ref>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://127.0.0.1/prelaunchr</jdbc-url>
+      <libraries />
+    </data-source>
+  </component>
+</project>
+
