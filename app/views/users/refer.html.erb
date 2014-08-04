@@ -1,25 +1,37 @@
 <div class="header">
     <div class="content">
-        <p class="logo brandon">Harry&#8217;s</p>
+        <p class="logo brandon">JONNY IV</p>
         <p class="byline brandon">THANK YOU FOR SIGNING UP</p>
     </div>
 </div>
 
 <div class="hero">
     <div class="page-content clearfix">
-        <div class="mammoth">
-            <span class="need brandon">Shaving Is<br>Evolving</span>
-        </div>
         <div class="share-wrap">
-            <p class="why brandon">Don't leave your friends behind</p>
-            <p class="title brandon">INVITE FRIENDS &<br>Earn Product</p>
-            <p class="subtitle brandon">Share your unique link via email, Facebook<br>or Twitter and earn Harry's goods for<br>each friend who signs up.</p>
-            <div class="copy-link brandon"><%= root_url %>?ref=<%= @user.referral_code %></div>
-            <% twitter_message = "#Shaving is evolving. Excited for @harrys to launch." %>
-            <div class="social-links">
-                <a href="http://www.facebook.com/sharer/sharer.php?u=<%= CGI::escape(root_url) %>?ref=<%= CGI::escape(@user.referral_code) %>&title=Harrys" class="fb" target="_blank"></a>
-                <div class="sep"></div>
-                <a href="http://twitter.com/share?url=<%= CGI::escape(root_url) %>?ref=<%= CGI::escape(@user.referral_code) %>&text=<%= CGI::escape(twitter_message) %>" class="twit" target="_blank"></a>
+            <div class="row">
+                <p class="why brandon">
+                    NOW INVITE YOUR BUDDIES AND EARN UP TO $200 JIV CREDIT!
+                </p>
+            </div>
+            <div class="row" style="margin: 0 auto;
+                width: 612px;">
+              <div class="subtitle brandon">Here’s your unique invite link:</div>
+              <div id="copy-link" class="copy-link brandon"><%= root_url %>?ref=<%= @user.referral_code %></div>
+            </div>
+            <% twitter_message = "Can’t wait for @jonnyiv to launch. I’m going to be #jonnyiv for free." %>
+            <div class="row" style="margin: 0 auto;
+                width: 200px;">
+                <div class="subtitle brandon">Share:</div>
+                <div class="social-links">
+                    <a class="fb" href="https://www.facebook.com/sharer.php?u=<%= CGI::escape(root_url) %><%= CGI::escape(@user.referral_code) %>&t=JONNY IV"
+                       onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false;"
+                       target="_blank" title="Share on Facebook">
+                    </a>
+                    <div class="sep"></div>
+                    <a href="http://twitter.com/share?url=<%= CGI::escape(root_url) %>?ref=<%= CGI::escape(@user.referral_code) %>&text=<%= CGI::escape(twitter_message) %>" class="twit" target="_blank"></a>
+                    <div class="sep"></div>
+                    <a href="#" onclick="sendMail(); return false" class="email"></a>
+                </div>
             </div>
         </div>
     </div>
@@ -43,17 +55,21 @@
  %>
 <div class="prizes <% if found %>prize-<%= found["class"] %><% end %>">
     <div class="page-content">
-        <p class="callout brandon">Here's How It Works:</p>
+        <p class="callout brandon">Share and see what you get!</p>
         <ul class="products clearfix">
-            <li class="title brandon"><p class="friends">Friends Joined</p><p class="rewards">Harry's Product</p></li>
+            <li class="title brandon">
+                <p class="friends">Friends Joined</p>
+                <p class="rewards">$ CREDIT</p>
+            </li>
             <% stops.each do |stop| %>
                 <li class="product brandon <% if stop["selected"] %>selected<% end %> <% if stop["class"] == 'five' %>last<% end %>">
                     <div class="circle"><%= stop["count"] %></div>
                     <div class="sep"></div>
                     <p><%= stop["html"].html_safe %></p>
-
                     <div class="tooltip">
-                        <img src="<%= stop["image"] %>" height="254">
+                      <p><%= stop["count"] %> friends</p>
+                      <p>=</p>
+                      <p><%= stop["html"].html_safe %></p>
                     </div>
                 </li>
             <% end %>
@@ -82,7 +98,20 @@
         <% end %>
         <p class="check brandon">Keep checking</p>
 
-        <p class="ship brandon">We ship to the U.S. (& Canada Soon)</p>        
-        <a class="policy brandon" href="/privacy-policy" target="_blank">Privacy Policy</a>
+        <!--<p class="ship brandon">We ship to the U.S. (& Canada Soon)</p>        -->
+        <!--<a class="policy brandon" href="/privacy-policy" target="_blank">Privacy Policy</a>-->
     </div>
 </div>
+
+<script type="application/javascript">
+  function sendMail() {
+    var email_message = "Can’t wait for jonny to launch. I’m going to be jonnyiv for free. "
+    var link = "mailto:"
+            + "?"
+            + "&subject=" + escape("Launch JONNY IV. Free credits.")
+            + "&body=" + email_message + document.getElementById('copy-link').innerHTML
+        ;
+
+    window.location.href = link;
+  }
+</script>

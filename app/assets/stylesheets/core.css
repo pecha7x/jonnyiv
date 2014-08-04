@@ -45,8 +45,8 @@ html.home{
 
 #home .hero{
 	width: 100%;
-	height: 446px;
-	background: url(/assets/home/hero.jpg) center center no-repeat;
+	height: 240px;
+	/*background: url(/assets/home/hero.jpg) center center no-repeat;*/
 	background-size: 1600px 446px;
 	overflow: hidden;
 	position: relative;
@@ -56,26 +56,27 @@ html.home{
 
 #home .hero .large{
 	font-weight: bold;
-	font-size: 40px;
+	font-size: 55px;
 	color: #074E6F;
 	text-transform: uppercase;
-	margin: 85px 0 0 136px;
+	/*margin: 85px 0 0 136px;*/
+    text-align: center;
+    margin-top: 86px;
 	position: relative;
 	z-index: 2;
 	letter-spacing: 2px;
 }
 
 #home .hero .small{
-	font-weight: bold;
 	color: #955F5D;
 	font-size: 18px;
-	margin: 10px 0 0 115px;
+	/*margin: 10px 0 0 115px;*/
 	line-height: 30px;
 	position: relative;
 	z-index: 2;
 	text-transform: uppercase;
 	text-align: center;
-	width: 375px;
+	/*width: 375px;*/
 	letter-spacing: 1px;
 }
 
@@ -117,8 +118,8 @@ html.home{
 	width: 143px;
 	background: #074E6F;
 	float: left;
-	height: 37px;
-	line-height: 37px;
+	height: 33px;
+	line-height: 33px;
 	color: #FFF;
 	font-size: 13px;
 	text-transform: uppercase;
@@ -262,7 +263,6 @@ html.home{
 }
 
 #refer .header{
-	height: 50px;
 	background: #074E6F;
 	width: 100%;
 	overflow:hidden;
@@ -285,24 +285,25 @@ html.home{
 
 #refer .header .byline{
 	font-size: 14px;
+    margin-left: 15px;
 }
 
 #refer .header .logo{
-	font-weight: normal;
-	font-size: 0;
-	line-height: 0;
-	margin-right: 14px;
-	letter-spacing: 1px;
-	background: url(/assets/refer/logo.png) 0 0 no-repeat;
-	background-size: 106px 19px;
-	height: 19px;
-	width: 106px;
-	margin-top: 15px;
+    font-weight: normal;
+    font-size: 50px;
+    /* line-height: 0; */
+    /* margin-right: 14px; */
+    /* letter-spacing: 1px; */
+    /* background: url(/assets/refer/logo.png) 0 0 no-repeat; */
+    /* background-size: 106px 19px; */
+    height: 36px;
+    /* width: 106px; */
+    margin-top: 15px;
 }
 
 #refer .hero{
 	background: #F1F0EE;
-	height: 391px;
+	/*height: 391px;*/
 	overflow: hidden;
 }
 
@@ -330,8 +331,8 @@ html.home{
 }
 
 #refer .share-wrap{
-	float: right;
-	width: 400px;
+	/*float: right;*/
+	/*width: 400px;*/
 	text-align: center;
 	text-transform: uppercase;
 	letter-spacing: .13em;
@@ -339,10 +340,12 @@ html.home{
 }
 
 #refer .share-wrap .why{
-	font-size: 16px;
-	color: #555556;
-	font-weight: bold;
-	margin-top: 42px;
+    font-size: 16px;
+    color: #555556;
+    font-weight: bold;
+    margin-top: 42px;
+    width: 100%;
+    text-align: center;
 }
 
 #refer .share-wrap .title{
@@ -359,24 +362,25 @@ html.home{
 	color: #565656;
 	font-size: 14px;
 	text-transform: none;
-	margin-top: 15px;
+	margin-top: 10px;
+    float: left;
 }
 
 #refer .share-wrap .copy-link{
 	border: 1px solid #D1D0C7;
 	background: #FFF;
 	padding: 10px 0;
-	width: 320px;
+	width: 350px;
 	text-transform: none;
 	font-size: 11px;
-	margin: 20px auto 0;
+    margin: 30px 260px 0;
 }
 
 #refer .share-wrap .social-links{
-	width: 120px;
-	height: 37px;
-	margin: 25px auto 0;
-	text-align: center;
+    width: 200px;
+    height: 50px;
+    margin: 30px 60px 0;
+    text-align: center;
 }
 
 #refer .share-wrap .social-links a, #refer .share-wrap .social-links div{
@@ -397,11 +401,18 @@ html.home{
 	height: 27px;
 }
 
+#refer .share-wrap .social-links .email{
+    background: url(/assets/refer/email.png) -2px -5px no-repeat;
+    background-size: 40px 40px;
+    width: 38px;
+    height: 32px;
+}
+
 #refer .share-wrap .social-links .sep{
 	height: 28px;
 	width: 1px;
 	background: #BAB9BA;
-	margin: 0 20px;
+	margin: 0 15px;
 }
 
 #refer .prizes{
@@ -510,7 +521,7 @@ html.home{
 
 #refer .prizes .products li.product .sep{
 	width: 12px;
-	height: 2px;
+	height: 12px;
 	background: transparent;
 	margin: 13px auto 13px;
 }
@@ -560,14 +571,15 @@ html.home{
 }
 
 #refer .prizes .products li.product .tooltip{
-	height: 254px;
+	height: 80px;
 	width: 190px;
 	border: 4px solid #074E6F;
 	position: absolute;
-	top: -285px;
+	top: -100px;
 	left: -32px;
 	display: none;
 	background: #FFF;
+    font-size: 22px;
 }
 
 #refer .prizes .products li.product .tooltip img{
