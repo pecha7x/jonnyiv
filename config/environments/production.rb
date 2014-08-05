@@ -67,5 +67,15 @@ Prelaunchr::Application.configure do
 
   config.action_mailer.default_url_options = { :host => "jonny-iv.herokuapp.com" }
 
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.smtp_settings = {
+      :address => "smtp.sendgrid.net",
+      :port => "587",
+      :authentication => :plain,
+      :user_name => ENV['SENDGRID_USERNAME'],
+      :password => ENV['SENDGRID_PASSWORD'],
+      :domain => "heroku.com"
+  }
+
   # config.assets.js_compressor = Uglifier.new(output: {ascii_only: true, quote_keys: true})
 end
