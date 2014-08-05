@@ -65,7 +65,7 @@ Prelaunchr::Application.configure do
   # with SQLite, MySQL, and PostgreSQL)
   # config.active_record.auto_explain_threshold_in_seconds = 0.5
 
-  config.action_mailer.default_url_options = { :host => "jonnyiv.herokuapp.com" }
+  config.action_mailer.default_url_options = { :host => "jonny-iv.herokuapp.com" }
 
   # config.assets.js_compressor = Uglifier.new(output: {ascii_only: true, quote_keys: true})
 end
