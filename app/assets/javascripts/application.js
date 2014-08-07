@@ -12,4 +12,5 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require links.js.coffee
 //= require_tree .
