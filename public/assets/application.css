@@ -545,7 +545,6 @@ body.active_admin form fieldset legend span {
   border-right-color: #d4d4d4;
   border-bottom-color: #cdcdcd;
   border-left-color: #d4d4d4;
-  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 0 1px white inset;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 0 1px white inset;
   font-size: 1.0em;
   font-weight: bold;
@@ -785,7 +784,6 @@ body.active_admin form input[type=submit] {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#838a90', endColorstr='#414549');
   -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#838a90', endColorstr='#414549');
   text-shadow: black 0 1px 0;
-  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 1px 0 0px rgba(255, 255, 255, 0.2) inset;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 1px 0 0px rgba(255, 255, 255, 0.2) inset;
   border: solid 1px #484e53;
   border-color: #484e53;
@@ -811,7 +809,6 @@ body.active_admin form input[type=submit]:not(.disabled):hover {
 }
 /* line 34, ../../../../.rvm/gems/ruby-1.9.3-p545@pre/gems/activeadmin-0.5.1/app/assets/stylesheets/active_admin/mixins/_buttons.css.scss */
 body.active_admin form input[type=submit]:not(.disabled):active {
-  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4) inset, 0 1px 0 0px white;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4) inset, 0 1px 0 0px white;
   background: #71797f;
   background: -webkit-gradient(linear, left top, left bottom, from(#71797f), to(#35383b));
@@ -851,7 +848,6 @@ body.active_admin form fieldset.buttons li.cancel a, body.active_admin form fiel
   background: -moz-linear-gradient(-90deg, white, #e7e7e7);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='white', endColorstr='#e7e7e7');
   -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='white', endColorstr='#e7e7e7');
-  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 1px 0 0 rgba(255, 255, 255, 0.8) inset;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 1px 0 0 rgba(255, 255, 255, 0.8) inset;
   border: solid 1px #c7c7c7;
   border-color: #c7c7c7;
@@ -877,7 +873,6 @@ body.active_admin form fieldset.buttons li.cancel a:not(.disabled):hover, body.a
 }
 /* line 55, ../../../../.rvm/gems/ruby-1.9.3-p545@pre/gems/activeadmin-0.5.1/app/assets/stylesheets/active_admin/mixins/_buttons.css.scss */
 body.active_admin form fieldset.buttons li.cancel a:not(.disabled):active, body.active_admin form fieldset.actions li.cancel a:not(.disabled):active {
-  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.22) inset, 0 1px 0 0px #eeeeee;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.22) inset, 0 1px 0 0px #eeeeee;
   border-color: #b9b9b9;
   border-top-color: #c2c2c2;
@@ -980,7 +975,6 @@ body.active_admin form.filter_form a.clear_filters_btn {
   background: -moz-linear-gradient(-90deg, white, #e7e7e7);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='white', endColorstr='#e7e7e7');
   -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='white', endColorstr='#e7e7e7');
-  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 1px 0 0 rgba(255, 255, 255, 0.8) inset;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 1px 0 0 rgba(255, 255, 255, 0.8) inset;
   border: solid 1px #c7c7c7;
   border-color: #c7c7c7;
@@ -1006,7 +1000,6 @@ body.active_admin form.filter_form a.clear_filters_btn:not(.disabled):hover {
 }
 /* line 55, ../../../../.rvm/gems/ruby-1.9.3-p545@pre/gems/activeadmin-0.5.1/app/assets/stylesheets/active_admin/mixins/_buttons.css.scss */
 body.active_admin form.filter_form a.clear_filters_btn:not(.disabled):active {
-  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.22) inset, 0 1px 0 0px #eeeeee;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.22) inset, 0 1px 0 0px #eeeeee;
   border-color: #b9b9b9;
   border-top-color: #c2c2c2;
@@ -1266,7 +1259,6 @@ body.active_admin .popover {
   position: absolute;
   background-color: white;
   padding: 2px;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.4) 0 1px 3px, #838a90 0px 1px 0px 0px inset;
   box-shadow: rgba(0, 0, 0, 0.4) 0 1px 3px, #838a90 0px 1px 0px 0px inset;
   background-color: #5e6469;
   background: #686e74;
@@ -1321,7 +1313,6 @@ body.active_admin .popover .popover_contents {
   display: block;
   background-color: #FFF;
   border: solid 1px #464a4e;
-  -webkit-box-shadow: #6a7176 0px 1px 0px 0px;
   box-shadow: #6a7176 0px 1px 0px 0px;
   border-radius: 3px;
   margin: 0;
@@ -1412,7 +1403,6 @@ body.active_admin table.index_table th {
   border-right-color: #d4d4d4;
   border-bottom-color: #cdcdcd;
   border-left-color: #d4d4d4;
-  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 0 1px white inset;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 0 1px white inset;
   font-size: 1.0em;
   font-weight: bold;
@@ -1546,17 +1536,10 @@ body.active_admin .attributes_table table td .empty {
 body.active_admin .sidebar_section .attributes_table th {
   width: 50px;
 }
-/* line 1, ../../../../.rvm/gems/ruby-1.9.3-p545@pre/gems/activeadmin-0.5.1/app/assets/stylesheets/active_admin/components/_batch_actions.css.scss */
-body.active_admin #collection_selection_toggle_panel {
-  *zoom: 1;
-}
-/* line 18, ../../../../.rvm/gems/ruby-1.9.3-p545@pre/gems/bourbon-3.0.1/app/assets/stylesheets/addons/_clearfix.scss */
-body.active_admin #collection_selection_toggle_panel:before, body.active_admin #collection_selection_toggle_panel:after {
-  content: " ";
-  display: table;
-}
-/* line 23, ../../../../.rvm/gems/ruby-1.9.3-p545@pre/gems/bourbon-3.0.1/app/assets/stylesheets/addons/_clearfix.scss */
+/* line 15, ../../../../.rvm/gems/ruby-1.9.3-p545@pre/gems/bourbon-3.2.3/app/assets/stylesheets/addons/_clearfix.scss */
 body.active_admin #collection_selection_toggle_panel:after {
+  content: "";
+  display: table;
   clear: both;
 }
 /* line 3, ../../../../.rvm/gems/ruby-1.9.3-p545@pre/gems/activeadmin-0.5.1/app/assets/stylesheets/active_admin/components/_batch_actions.css.scss */
@@ -1649,7 +1632,6 @@ body.active_admin .dropdown_menu .dropdown_menu_button {
   background: -moz-linear-gradient(-90deg, white, #e7e7e7);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='white', endColorstr='#e7e7e7');
   -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='white', endColorstr='#e7e7e7');
-  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 1px 0 0 rgba(255, 255, 255, 0.8) inset;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 1px 0 0 rgba(255, 255, 255, 0.8) inset;
   border: solid 1px #c7c7c7;
   border-color: #c7c7c7;
@@ -1678,7 +1660,6 @@ body.active_admin .dropdown_menu .dropdown_menu_button:not(.disabled):hover {
 }
 /* line 55, ../../../../.rvm/gems/ruby-1.9.3-p545@pre/gems/activeadmin-0.5.1/app/assets/stylesheets/active_admin/mixins/_buttons.css.scss */
 body.active_admin .dropdown_menu .dropdown_menu_button:not(.disabled):active {
-  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.22) inset, 0 1px 0 0px #eeeeee;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.22) inset, 0 1px 0 0px #eeeeee;
   border-color: #b9b9b9;
   border-top-color: #c2c2c2;
@@ -1758,7 +1739,6 @@ body.active_admin .dropdown_menu .dropdown_menu_list_wrapper {
   position: absolute;
   background-color: white;
   padding: 2px;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.4) 0 1px 3px, #838a90 0px 1px 0px 0px inset;
   box-shadow: rgba(0, 0, 0, 0.4) 0 1px 3px, #838a90 0px 1px 0px 0px inset;
   background-color: #5e6469;
   background: #686e74;
@@ -1776,7 +1756,6 @@ body.active_admin .dropdown_menu .dropdown_menu_list_wrapper .dropdown_menu_list
   display: block;
   background-color: #FFF;
   border: solid 1px #464a4e;
-  -webkit-box-shadow: #6a7176 0px 1px 0px 0px;
   box-shadow: #6a7176 0px 1px 0px 0px;
   border-radius: 3px;
   margin: 0;
@@ -1882,7 +1861,6 @@ body.active_admin a.button, body.active_admin a:link.button, body.active_admin a
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#838a90', endColorstr='#414549');
   -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#838a90', endColorstr='#414549');
   text-shadow: black 0 1px 0;
-  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 1px 0 0px rgba(255, 255, 255, 0.2) inset;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 1px 0 0px rgba(255, 255, 255, 0.2) inset;
   border: solid 1px #484e53;
   border-color: #484e53;
@@ -1907,7 +1885,6 @@ body.active_admin a.button:not(.disabled):hover, body.active_admin a:link.button
 }
 /* line 34, ../../../../.rvm/gems/ruby-1.9.3-p545@pre/gems/activeadmin-0.5.1/app/assets/stylesheets/active_admin/mixins/_buttons.css.scss */
 body.active_admin a.button:not(.disabled):active, body.active_admin a:link.button:not(.disabled):active, body.active_admin a:visited.button:not(.disabled):active, body.active_admin input[type=submit]:not(.disabled):active {
-  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4) inset, 0 1px 0 0px white;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4) inset, 0 1px 0 0px white;
   background: #71797f;
   background: -webkit-gradient(linear, left top, left bottom, from(#71797f), to(#35383b));
@@ -1969,7 +1946,6 @@ body.active_admin .pagination a {
   background: -moz-linear-gradient(-90deg, white, #e7e7e7);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='white', endColorstr='#e7e7e7');
   -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='white', endColorstr='#e7e7e7');
-  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 1px 0 0 rgba(255, 255, 255, 0.8) inset;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 1px 0 0 rgba(255, 255, 255, 0.8) inset;
   border: solid 1px #c7c7c7;
   border-color: #c7c7c7;
@@ -1995,7 +1971,6 @@ body.active_admin .pagination a:not(.disabled):hover {
 }
 /* line 55, ../../../../.rvm/gems/ruby-1.9.3-p545@pre/gems/activeadmin-0.5.1/app/assets/stylesheets/active_admin/mixins/_buttons.css.scss */
 body.active_admin .pagination a:not(.disabled):active {
-  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.22) inset, 0 1px 0 0px #eeeeee;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.22) inset, 0 1px 0 0px #eeeeee;
   border-color: #b9b9b9;
   border-top-color: #c2c2c2;
@@ -2028,7 +2003,6 @@ body.active_admin .pagination span.page.current {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#838a90', endColorstr='#414549');
   -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#838a90', endColorstr='#414549');
   text-shadow: black 0 1px 0;
-  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 1px 0 0px rgba(255, 255, 255, 0.2) inset;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 1px 0 0px rgba(255, 255, 255, 0.2) inset;
   border: solid 1px #484e53;
   border-color: #484e53;
@@ -2053,7 +2027,6 @@ body.active_admin .pagination span.page.current:not(.disabled):hover {
 }
 /* line 34, ../../../../.rvm/gems/ruby-1.9.3-p545@pre/gems/activeadmin-0.5.1/app/assets/stylesheets/active_admin/mixins/_buttons.css.scss */
 body.active_admin .pagination span.page.current:not(.disabled):active {
-  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4) inset, 0 1px 0 0px white;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4) inset, 0 1px 0 0px white;
   background: #71797f;
   background: -webkit-gradient(linear, left top, left bottom, from(#71797f), to(#35383b));
@@ -2108,7 +2081,6 @@ body.active_admin .section > h3, body.active_admin .panel > h3 {
   border-right-color: #d4d4d4;
   border-bottom-color: #cdcdcd;
   border-left-color: #d4d4d4;
-  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 0 1px white inset;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 0 1px white inset;
   font-size: 1.0em;
   font-weight: bold;
@@ -2165,7 +2137,6 @@ body.active_admin .sidebar_section > h3 {
   border-right-color: #d4d4d4;
   border-bottom-color: #cdcdcd;
   border-left-color: #d4d4d4;
-  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 0 1px white inset;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 0 1px white inset;
   font-size: 1.0em;
   font-weight: bold;
@@ -2267,7 +2238,6 @@ body.active_admin a.table_tools_button, body.active_admin .table_tools .dropdown
   background: -moz-linear-gradient(-90deg, white, #e7e7e7);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='white', endColorstr='#e7e7e7');
   -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='white', endColorstr='#e7e7e7');
-  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 1px 0 0 rgba(255, 255, 255, 0.8) inset;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 1px 0 0 rgba(255, 255, 255, 0.8) inset;
   border: solid 1px #c7c7c7;
   border-color: #c7c7c7;
@@ -2308,7 +2278,6 @@ body.active_admin a.table_tools_button:not(.disabled):hover, body.active_admin .
 }
 /* line 55, ../../../../.rvm/gems/ruby-1.9.3-p545@pre/gems/activeadmin-0.5.1/app/assets/stylesheets/active_admin/mixins/_buttons.css.scss */
 body.active_admin a.table_tools_button:not(.disabled):active, body.active_admin .table_tools .dropdown_menu_button:not(.disabled):active {
-  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.22) inset, 0 1px 0 0px #eeeeee;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.22) inset, 0 1px 0 0px #eeeeee;
   border-color: #b9b9b9;
   border-top-color: #c2c2c2;
@@ -2336,7 +2305,6 @@ body.active_admin a.table_tools_button:not(.disabled):active, body.active_admin 
   border-right-color: #c8c8c8;
   border-bottom-color: #c3c3c3;
   border-left-color: #c8c8c8;
-  -webkit-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.17) inset;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.17) inset;
   background: white;
   background: -webkit-gradient(linear, left top, left bottom, from(white), to(#e8e8e8));
@@ -2384,7 +2352,6 @@ body.active_admin .table_tools_segmented_control li.selected a {
   background: -moz-linear-gradient(-90deg, #f0f0f0, #fdfdfd);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f0f0f0', endColorstr='#fdfdfd');
   -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f0f0f0', endColorstr='#fdfdfd');
-  -webkit-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1) inset;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1) inset;
   cursor: default;
 }
@@ -2429,7 +2396,6 @@ body.active_admin table.dashboard .dashboard_section > h3 {
   border-right-color: #d4d4d4;
   border-bottom-color: #cdcdcd;
   border-left-color: #d4d4d4;
-  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 0 1px white inset;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 0 1px white inset;
   font-size: 1.0em;
   font-weight: bold;
@@ -2492,7 +2458,6 @@ body.active_admin.logged_out h2 {
   border-right-color: #d4d4d4;
   border-bottom-color: #cdcdcd;
   border-left-color: #d4d4d4;
-  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 0 1px white inset;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 0 1px white inset;
   font-size: 1.0em;
   font-weight: bold;
@@ -2507,7 +2472,6 @@ body.active_admin.logged_out h2 {
   -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#6a7176', endColorstr='#4d5256');
   border-bottom: 1px solid #44484b;
   text-shadow: black 0 1px 0;
-  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
   border: none;
   color: #fff;
@@ -2620,7 +2584,6 @@ body.active_admin #title_bar {
   border-right-color: #d4d4d4;
   border-bottom-color: #cdcdcd;
   border-left-color: #d4d4d4;
-  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 0 1px white inset;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 0 1px white inset;
   font-size: 1.0em;
   font-weight: bold;
@@ -2628,11 +2591,9 @@ body.active_admin #title_bar {
   margin-bottom: 0.5em;
   color: #5e6469;
   padding: 5px 10px 3px 10px;
-  *zoom: 1;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.37);
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.37);
   display: table;
   border-bottom-color: #EEE;
@@ -2657,13 +2618,10 @@ body.active_admin #title_bar span.icon svg {
   width: 1em;
   height: 1em;
 }
-/* line 18, ../../../../.rvm/gems/ruby-1.9.3-p545@pre/gems/bourbon-3.0.1/app/assets/stylesheets/addons/_clearfix.scss */
-body.active_admin #title_bar:before, body.active_admin #title_bar:after {
-  content: " ";
-  display: table;
-}
-/* line 23, ../../../../.rvm/gems/ruby-1.9.3-p545@pre/gems/bourbon-3.0.1/app/assets/stylesheets/addons/_clearfix.scss */
+/* line 15, ../../../../.rvm/gems/ruby-1.9.3-p545@pre/gems/bourbon-3.2.3/app/assets/stylesheets/addons/_clearfix.scss */
 body.active_admin #title_bar:after {
+  content: "";
+  display: table;
   clear: both;
 }
 /* line 15, ../../../../.rvm/gems/ruby-1.9.3-p545@pre/gems/activeadmin-0.5.1/app/assets/stylesheets/active_admin/structure/_title_bar.scss */
@@ -2702,7 +2660,6 @@ body.active_admin #title_bar .action_items a {
   background: -moz-linear-gradient(-90deg, white, #e7e7e7);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='white', endColorstr='#e7e7e7');
   -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='white', endColorstr='#e7e7e7');
-  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 1px 0 0 rgba(255, 255, 255, 0.8) inset;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 1px 0 0 rgba(255, 255, 255, 0.8) inset;
   border: solid 1px #c7c7c7;
   border-color: #c7c7c7;
@@ -2730,7 +2687,6 @@ body.active_admin #title_bar .action_items a:not(.disabled):hover {
 }
 /* line 55, ../../../../.rvm/gems/ruby-1.9.3-p545@pre/gems/activeadmin-0.5.1/app/assets/stylesheets/active_admin/mixins/_buttons.css.scss */
 body.active_admin #title_bar .action_items a:not(.disabled):active {
-  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.22) inset, 0 1px 0 0px #eeeeee;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.22) inset, 0 1px 0 0px #eeeeee;
   border-color: #b9b9b9;
   border-top-color: #c2c2c2;
