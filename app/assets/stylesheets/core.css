@@ -31,7 +31,12 @@ form{
 /* Home */
 
 html.home{
-	background: #EDECEA;
+	/*background: #EDECEA;*/
+    background: url(/assets/ReferralPage_new.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 #home{
@@ -81,9 +86,7 @@ html.home{
 }
 
 #home .form-wrap{
-	height: 80px;
-	width: 411px;
-	margin: 23px auto 0;
+    width: 268px;
 }
 
 #home .form-wrap .key{
@@ -105,10 +108,10 @@ html.home{
 }
 
 #home .form-wrap .email{
-	float: left;
+	/*float: left;*/
 	font-size: 13px;
 	padding: 8px 0 8px 10px;
-	border: 1px solid #074E6F;
+	border: 1px solid #000000;
 	width: 256px;
 	outline: none;
 	letter-spacing: 1px;
@@ -116,15 +119,18 @@ html.home{
 
 #home .form-wrap .submit{
 	width: 143px;
-	background: #074E6F;
+	background: #2a13d2;
 	float: left;
 	height: 33px;
 	line-height: 33px;
 	color: #FFF;
+    border: 1px solid #352b7a;
 	font-size: 13px;
 	text-transform: uppercase;
 	border: 0;
 	letter-spacing: 2px;
+    margin-top: 18px;
+    margin-left: 61px;
 }
 
 #home .form-wrap.ended{

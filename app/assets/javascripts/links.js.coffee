@@ -13,5 +13,6 @@ links =
       opts = "status=1" + ",width=" + width + ",height=" + height + ",top=" + top + ",left=" + left
       window.open url, $(this).data('type'), opts
       false
+
 $ ->
   links.init()

@@ -13,4 +13,5 @@
 //= require jquery
 //= require jquery_ujs
 //= require links.js.coffee
+//= require center.js
 //= require_tree .
