@@ -64,13 +64,17 @@ img { width: 100%; height: auto; }
 .progress { background-color: #f6f6f6; height: 1.38889rem; border: 1px solid white; padding: 0.11111rem; margin-bottom: 0.55556rem; }
 .progress .meter { background: #2001db; height: 100%; display: block; }
 
-.footer--full { max-width: 92%; margin-left: auto; margin-right: auto; padding: 30px 0px; }
+.footer--full { max-width: 92%; margin-left: auto; margin-right: auto; padding: 48px 0px; }
 .footer--full:after { content: " "; display: block; clear: both; }
 .footer--full .status__joined li, .footer--full .status__credit li { width: 18.36735%; float: left; margin-right: 2.04082%; position: relative; }
 .footer--full .status__joined li:last-child, .footer--full .status__credit li:last-child { margin-right: 0px; }
-.footer--full .status__joined .abs, .footer--full .status__credit .abs { position: absolute; width: 160px; background-color: black; height: 75px; bottom: 130%; right: 41%; border: 1px solid #2001db; color: white; text-align: center; padding-top: 25px; display: none; }
+.footer--full .status__joined .abs, .footer--full .status__credit .abs { position: absolute; width: 160px; background-color: black; height: 75px; bottom: 130%; right: 41%; border: 1px solid #2001db; color: white; text-align: center; padding-top: 25px; display: block; }
+.footer--full .status__joined .abs p, .footer--full .status__credit .abs p { font: 700 18px "BrandonGrotesque",sans-serif; }
 .footer--full .status__joined:after, .footer--full .status__credit:after { content: ''; display: table; clear: both; }
 .footer--full .status__joined .mess, .footer--full .status__credit .mess { font: 700 13px "BrandonGrotesque",sans-serif; }
 .footer--full .status__joined .bottom, .footer--full .status__credit .bottom { padding-top: 5px; }
 .footer--full .status__joined .circle, .footer--full .status__credit .circle { width: 30px; height: 30px; border: 2px solid #2001db; text-align: center; display: table; }
 .footer--full .status__joined .circle span, .footer--full .status__credit .circle span { display: table-cell; vertical-align: middle; }
+
+.prase { font: 700 12px "BrandonGrotesque",sans-serif; }
+.prase .num { color: #2001db; }
