@@ -64,18 +64,22 @@ class UsersController < ApplicationController
     end
 
     def refer
+        #@testing variable created by media3 used to change stylesheet
+        @testing = true
+
         email = cookies[:h_email]
 
         @bodyId = 'refer'
         @is_mobile = mobile_device?
 
         @user = User.find_by_email(email)
-
         respond_to do |format|
             if !@user.nil?
                 format.html #refer.html.erb
             else
-                format.html { redirect_to root_path, :alert => "Something went wrong!" }
+                #format.html { redirect_to root_path, :alert => "Something went wrong!" }
+                #Changed by media 3 for static html content
+                format.html 
             end
         end
     end

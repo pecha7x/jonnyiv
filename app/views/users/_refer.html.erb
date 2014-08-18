@@ -1,0 +1,114 @@
+<div class="header">
+    <div class="content">
+        <p class="logo brandon">JONNY IV</p>
+        <p class="byline brandon">THANK YOU FOR SIGNING UP</p>
+    </div>
+</div>
+
+<div class="hero">
+    <div class="page-content clearfix">
+        <div class="share-wrap">
+            <div class="row">
+                <p class="why brandon">
+                    NOW INVITE YOUR BUDDIES AND EARN UP TO $200 JIV CREDIT!
+                </p>
+            </div>
+            <div class="row" style="margin: 0 auto;
+                width: 612px;">
+              <div class="subtitle brandon">Here’s your unique invite link:</div>
+              <div id="copy-link" class="copy-link brandon"><%= root_url %>?ref=<%= @user.referral_code %></div>
+            </div>
+            <% twitter_message = "Can’t wait for @jonnyiv to launch. I’m going to be #jonnyiv for free." %>
+            <div class="row" style="margin: 0 auto;
+                width: 200px;">
+                <div class="subtitle brandon">Share:</div>
+                <div class="social-links">
+                    <a class="fb facebook popup" data-type="facebook" href="https://www.facebook.com/sharer/sharer.php?u=<%= CGI::escape(root_url) %>?ref=<%= CGI::escape(@user.referral_code) %>&title=JONNY IV?v=1"></a>
+                    <div class="sep"></div>
+                    <a class="twit twitter popup" data-type="twitter" href="http://twitter.com/share?url=<%= CGI::escape(root_url) %>?ref=<%= CGI::escape(@user.referral_code) %>&text=<%= CGI::escape(twitter_message) %>"></a>
+                    <div class="sep"></div>
+                    <a href="#" onclick="sendMail(); return false" class="email"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<% 
+    referrals_count = @user.referrals.count
+
+    stops = User::REFERRAL_STEPS
+
+    found = nil
+
+    stops.reverse_each { |stop|
+        if stop["count"] <= referrals_count and !found
+            stop["selected"] = true
+            found = stop
+        else
+            stop["selected"] = false
+        end
+    }   
+ %>
+<div class="prizes <% if found %>prize-<%= found["class"] %><% end %>">
+    <div class="page-content">
+        <p class="callout brandon">Share and see what you get!</p>
+        <ul class="products clearfix">
+            <li class="title brandon">
+                <p class="friends">Friends Joined</p>
+                <p class="rewards">$ CREDIT</p>
+            </li>
+            <% stops.each do |stop| %>
+                <li class="product brandon <% if stop["selected"] %>selected<% end %> <% if stop["class"] == 'five' %>last<% end %>">
+                    <div class="circle"><%= stop["count"] %></div>
+                    <div class="sep"></div>
+                    <p><%= stop["html"].html_safe %></p>
+                    <div class="tooltip">
+                      <p><%= stop["count"] %> friends</p>
+                      <p>=</p>
+                      <p><%= stop["html"].html_safe %></p>
+                    </div>
+                </li>
+            <% end %>
+        </ul>
+
+        <div class="progress">
+            <div class="mover">
+                <div class="bar clearfix"></div>
+            </div>
+        </div>
+
+        <% 
+            words = ''
+            if referrals_count == 1
+                words = 'friend has'
+            elsif 
+                words = 'friends have'
+            end
+
+        %>
+
+        <% if referrals_count == 0 %>
+            <p class="place brandon"><span>No</span> friends have joined...Yet!</p>
+        <% else %>
+            <p class="place brandon"><span><%= referrals_count %></span> <%= words %> joined</p>
+        <% end %>
+        <p class="check brandon">Keep checking</p>
+
+        <!--<p class="ship brandon">We ship to the U.S. (& Canada Soon)</p>        -->
+        <!--<a class="policy brandon" href="/privacy-policy" target="_blank">Privacy Policy</a>-->
+    </div>
+</div>
+
+<script type="application/javascript">
+  function sendMail() {
+    var email_message = "Can’t wait for jonny to launch. I’m going to be jonnyiv for free. "
+    var link = "mailto:"
+            + "?"
+            + "&subject=" + escape("Launch JONNY IV. Free credits.")
+            + "&body=" + email_message + document.getElementById('copy-link').innerHTML
+        ;
+
+    window.location.href = link;
+  }
+</script>

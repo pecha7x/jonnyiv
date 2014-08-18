@@ -1,0 +1,345 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, ../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass-core-1.0.0.alpha.21/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass-core-1.0.0.alpha.21/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass-core-1.0.0.alpha.21/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass-core-1.0.0.alpha.21/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass-core-1.0.0.alpha.21/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass-core-1.0.0.alpha.21/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass-core-1.0.0.alpha.21/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass-core-1.0.0.alpha.21/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/compass-core-1.0.0.alpha.21/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 8, ../srn/sass/screen.scss */
+h1 {
+  width: 200px;
+  height: 40px;
+  margin: 0px auto;
+  margin-bottom: 16px;
+}
+
+/* line 14, ../srn/sass/screen.scss */
+h2 {
+  font: 400 24px "BrandonGrotesque",sans-serif;
+}
+
+/* line 17, ../srn/sass/screen.scss */
+h3 {
+  font: 400 30px "MyriadPro",sans-serif;
+}
+/* line 19, ../srn/sass/screen.scss */
+h3 span {
+  color: #2001db;
+}
+
+/* line 23, ../srn/sass/screen.scss */
+ul {
+  list-style: none;
+}
+
+/* line 26, ../srn/sass/screen.scss */
+img {
+  width: 100%;
+  height: auto;
+}
+
+/* line 30, ../srn/sass/screen.scss */
+.circle {
+  border-radius: 50%;
+}
+
+/* line 33, ../srn/sass/screen.scss */
+.header {
+  background: #000;
+  min-height: 100px;
+  padding-top: 10px;
+  color: white;
+}
+
+/* line 39, ../srn/sass/screen.scss */
+.wrapper {
+  max-width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+/* line 12, ../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/susy-2.1.3/sass/susy/output/support/_clearfix.scss */
+.wrapper:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+/* line 43, ../srn/sass/screen.scss */
+.banner {
+  min-height: 325px;
+  background: url(../assets/banner_02.jpg) no-repeat;
+  background-size: cover;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+/* line 50, ../srn/sass/screen.scss */
+.footer {
+  min-height: 325px;
+  padding: 30px 0px 60px 0px;
+}
+
+/* line 57, ../srn/sass/screen.scss */
+.banner__header .header--left {
+  width: 20%;
+  float: left;
+}
+/* line 59, ../srn/sass/screen.scss */
+.banner__header .header--left .circle {
+  width: 100px;
+  height: 100px;
+  border: 1px solid white;
+  background: white;
+  text-align: center;
+  display: table;
+}
+/* line 66, ../srn/sass/screen.scss */
+.banner__header .header--left .circle span {
+  display: table-cell;
+  vertical-align: middle;
+}
+/* line 72, ../srn/sass/screen.scss */
+.banner__header .header--right {
+  width: 55%;
+  float: left;
+  margin-right: 5.26316%;
+  padding-top: 20px;
+}
+/* line 76, ../srn/sass/screen.scss */
+.banner__header:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+/* line 82, ../srn/sass/screen.scss */
+.banner__invite {
+  padding-top: 50px;
+}
+/* line 84, ../srn/sass/screen.scss */
+.banner__invite .invite--left {
+  width: 25%;
+  float: left;
+  margin-right: 5.26316%;
+  margin-left: 100px;
+  text-align: right;
+}
+/* line 88, ../srn/sass/screen.scss */
+.banner__invite .invite--left p {
+  font: 15px "ProximaNova",sans-serif;
+  padding-top: 5px;
+}
+/* line 93, ../srn/sass/screen.scss */
+.banner__invite .invite--right {
+  width: 50%;
+  float: left;
+  margin-right: 5.26316%;
+}
+/* line 96, ../srn/sass/screen.scss */
+.banner__invite form {
+  text-align: left;
+}
+/* line 99, ../srn/sass/screen.scss */
+.banner__invite input {
+  width: 350px;
+  height: 18px;
+  padding: 5px 20px;
+}
+/* line 104, ../srn/sass/screen.scss */
+.banner__invite:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+/* line 110, ../srn/sass/screen.scss */
+.banner__share {
+  padding-top: 45px;
+}
+/* line 112, ../srn/sass/screen.scss */
+.banner__share p {
+  width: 25%;
+  float: left;
+  margin-right: 5.26316%;
+  margin-left: 100px;
+  text-align: right;
+  padding-top: 5px;
+}
+/* line 118, ../srn/sass/screen.scss */
+.banner__share .social {
+  width: 50%;
+  float: left;
+  margin-right: 5.26316%;
+  text-align: left;
+}
+/* line 121, ../srn/sass/screen.scss */
+.banner__share .social li {
+  display: inline-block;
+  width: 35px;
+  height: 28px;
+  background: url(/assets/soc_03.png);
+  background-size: cover;
+  margin-left: 15px;
+}
+/* line 128, ../srn/sass/screen.scss */
+.banner__share .social li a {
+  display: block;
+  width: 35px;
+  height: 28px;
+}
+/* line 133, ../srn/sass/screen.scss */
+.banner__share .social li:first-child {
+  margin-left: 0px;
+}
+/* line 140, ../srn/sass/screen.scss */
+.banner__share .social .twitter {
+  background-position: 87px;
+}
+/* line 143, ../srn/sass/screen.scss */
+.banner__share .social .messenger {
+  background-position: 37px;
+}
+
+/* line 149, ../srn/sass/screen.scss */
+.progress {
+  background-color: #f6f6f6;
+  height: 1.38889rem;
+  border: 1px solid white;
+  padding: 0.11111rem;
+  margin-bottom: 0.55556rem;
+}
+/* line 155, ../srn/sass/screen.scss */
+.progress .meter {
+  background: #2001db;
+  height: 100%;
+  display: block;
+}
+
+/* line 162, ../srn/sass/screen.scss */
+.footer--full {
+  max-width: 92%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 30px 0px;
+}
+/* line 12, ../../../../.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/susy-2.1.3/sass/susy/output/support/_clearfix.scss */
+.footer--full:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+/* line 165, ../srn/sass/screen.scss */
+.footer--full .status__joined li, .footer--full .status__credit li {
+  width: 18.36735%;
+  float: left;
+  margin-right: 2.04082%;
+  position: relative;
+}
+/* line 167, ../srn/sass/screen.scss */
+.footer--full .status__joined li:last-child, .footer--full .status__credit li:last-child {
+  margin-right: 0px;
+}
+/* line 172, ../srn/sass/screen.scss */
+.footer--full .status__joined .abs, .footer--full .status__credit .abs {
+  position: absolute;
+  width: 160px;
+  background-color: black;
+  height: 75px;
+  bottom: 130%;
+  right: 41%;
+  border: 1px solid #2001db;
+  color: white;
+  text-align: center;
+  padding-top: 25px;
+  display: none;
+}
+/* line 185, ../srn/sass/screen.scss */
+.footer--full .status__joined:after, .footer--full .status__credit:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+/* line 190, ../srn/sass/screen.scss */
+.footer--full .status__joined .mess, .footer--full .status__credit .mess {
+  font: 700 13px "BrandonGrotesque",sans-serif;
+}
+/* line 193, ../srn/sass/screen.scss */
+.footer--full .status__joined .bottom, .footer--full .status__credit .bottom {
+  padding-top: 5px;
+}
+/* line 196, ../srn/sass/screen.scss */
+.footer--full .status__joined .circle, .footer--full .status__credit .circle {
+  width: 30px;
+  height: 30px;
+  border: 2px solid #2001db;
+  text-align: center;
+  display: table;
+}
+/* line 202, ../srn/sass/screen.scss */
+.footer--full .status__joined .circle span, .footer--full .status__credit .circle span {
+  display: table-cell;
+  vertical-align: middle;
+}

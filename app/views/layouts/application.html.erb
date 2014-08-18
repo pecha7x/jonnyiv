@@ -20,7 +20,11 @@
                 <meta name="viewport" content="width=1120" />
             <% end %>
         <% end %>
+        <% if @testing == true %>
+            <%= stylesheet_link_tag "screen.css", :media => "all" %>
+        <% else %> 
         <%= stylesheet_link_tag "core.css", :media => "all" %>
+        <% end %>
         <%= javascript_include_tag "application"%>
         <%= csrf_meta_tags %>
 </head>
