@@ -1,17 +1,19 @@
-<div class="hero">
-
-</div>
-
-<div class="form-wrap clearfix <%= "ended" if Rails.application.config.ended %>">
-    <% if Rails.application.config.ended %>
-        <p class="thanks brandon">THANK YOU FOR PARTICIPATING<br>IN OUR PRE-LAUNCH.</p>
-        <p class="compiling brandon">WE ARE COMPILING REWARDS RIGHT NOW AND WILL EMAIL<br/>COUPON CODES TO ALL RECIPIENTS IN THE NEXT DAY OR TWO</p>
-        <p class="go-to brandon">In the meantime, head to  <a href="http://www.jonnyiv.com/">WWW.JONNYIV.COM</a></p>
-        <p class="again brandon">Thank You Again!</p>
-    <% else %>
-        <%= form_for @user, :url => { :action => "create" } do |f| %>
-            <%= f.text_field :email, :placeholder => "Enter Email", :class => "email brandon" %>
-            <input class="submit brandon" name="commit" type="submit" value="LET DO THIS" />
-        <% end %>
-    <% end %>
+<div class="main__container">
+    <div class="wrapper">
+        <div class="wrapper__content">
+            <div class="content__header">
+                <h1><img src="assets/logo_03.png" alt="JOHNNY1V"></h1>
+                <p>LOOK YOUR BEST</p>
+            </div>
+            <div class="content__signup">
+                <h2>SIGN UP NOW & <br>EARN UP TO <br> <span class="value">$150</span></h2>
+            </div>
+            <div class="content__form">
+                <form action="#">
+                    <input type="email" placeholder="Enter Email" class="email brandon">
+                    <input class="submit brandon" name="commit" type="submit" value="LET DO THIS"/>
+                </form>
+            </div>
+        </div>
+    </div>    
 </div>
